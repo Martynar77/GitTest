@@ -4,12 +4,13 @@
     box-sizing:border-box
 }
 body{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: 'Anonymous Pro', monospace;
     color:#fff;
 }
 /* container style */
 .container{
+    position:relative;
     margin:0 auto;
     height: 100vh;
     width:100%;
@@ -18,10 +19,20 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 .container h1{
     text-transform: uppercase;
-    font-size: 3.2em;
+    font-size: 5em;
+    letter-spacing: 3px;
+    font-family: 'El Messiri', sans-serif;
+}
+.container h2{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 2em;
 }
 .container h1:after{
     content: "";
@@ -29,31 +40,94 @@ body{
     margin:5px auto;
     width:75%;
     height:1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 .bg-1{
-    background: url(https://images.unsplash.com/photo-1541796484625-7f5bcba550cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac759f3f244b417ca48e7f15b8e0b7d8&auto=format&fit=crop&w=1502&q=80);background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1541796484625-7f5bcba550cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac759f3f244b417ca48e7f15b8e0b7d8&auto=format&fit=crop&w=1502&q=80);
 }
 .bg-2{
-    background: url(https://images.unsplash.com/photo-1530569526290-6275d86b478f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8bd3dc01a8729f76c88596251d5ffa5&auto=format&fit=crop&w=1525&q=80);background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1530569526290-6275d86b478f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8bd3dc01a8729f76c88596251d5ffa5&auto=format&fit=crop&w=1525&q=80);
 }
+.bg-3{
+    background-image: url(https://images.unsplash.com/photo-1506086679524-493c64fdfaa6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20c90a178204027036a6b85f3cc8b611&auto=format&fit=crop&w=1500&q=80);
+}
+
 /* text section style */
 .section{
-    height: 300px;
+    height: auto;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    z-index: 99;
+    padding:50px;
 }
 .one{
     background-color: #151822;
+}
+.one span{
+    color:#1588b5;
+}
+#light{
+    color: #fff;
 }
 .section h3{
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 300;
+    color:#ac4805;
+    margin-bottom:20px;
+    font-family: 'El Messiri', sans-serif;
 }
+.section p {
+    width:80%;
+    color:#ddd;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+    padding:5px;
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    margin-top:20px;
+    padding:10px 15px;
+    color:#ddd;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+.btn:hover{
+    color:#ac4805;
+    border-color: #ac4805;
+
+}
+.two{
+    background-color: #fff;
+}
+.three{
+    background-color: #1a110d;
+}
+
+.two p, .two a {
+    color:#474747;
+}
+.four{
+    background-color: #060b1b;
+}
+  /* Video object */
+
+  #hero-vid{
+    backface-visibility:hidden;
+    background:url("https://images.ecosia.org/QpKg_Kzdo8mN7BH2YbjaQIPu9nA=/0x390/smart/http%3A%2F%2Fwww.onthegotours.com%2Fblog%2Fwp-content%2Fuploads%2F2016%2F03%2FNorthern-Lights-Iceland.jpg") no-repeat scroll 0 0 #000;
+    background-size:cover;
+    bottom:0;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    perspective:1000;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-1;
+  }
+ 
