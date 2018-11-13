@@ -190,7 +190,6 @@ cite {
 /* CARD-BOX */
 #card-box {
     width: 100%;
-    /* padding:20px; */
     display: flex;
     margin-top: 50px;
     position: relative;
@@ -203,6 +202,7 @@ cite {
     overflow: hidden;
     position: relative;
     font-size: 0;
+    z-index: 1000;
 }
 
 .card img {

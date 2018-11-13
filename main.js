@@ -7,12 +7,11 @@ cardBox.addEventListener('mouseover', function (e) {
     text.classList.add('title')
     card.appendChild(text)
     e.preventDefault();
-
+    console.log("in")
 })
 cardBox.addEventListener('mouseout', function (e) {
     var cardTitle = document.querySelector('.title')
-    // console.log(e.target.parentElement)
-    console.log(e.target.parentElement.parentElement)
     e.target.parentElement.parentElement.removeChild(cardTitle)
     e.preventDefault()
+    console.log('out')
 })
